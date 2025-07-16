@@ -1,0 +1,23 @@
+int device1 = 8;
+int device2 = 9;
+
+void setup() {
+  pinMode(device1, OUTPUT);
+  pinMode(device2, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  if (Serial.available()) {
+    char command = Serial.read();
+    if (command == '1') {
+      digitalWrite(device1, HIGH); // Turn ON device 1
+    } else if (command == '0') {
+      digitalWrite(device1, LOW);  // Turn OFF device 1
+    } else if (command == '2') {
+      digitalWrite(device2, HIGH); // Turn ON device 2
+    } else if (command == '3') {
+      digitalWrite(device2, LOW);  // Turn OFF device 2
+    }
+  }
+}
