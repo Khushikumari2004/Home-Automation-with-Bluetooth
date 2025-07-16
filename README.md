@@ -6,5 +6,15 @@ Appliances are simulated using LEDs connected to the Arduino.When specific comma
 the Arduino processes them and switches the devices accordingly.
 This project showcases the use of wireless communication, serial data handling, and digital output control, making it ideal for smart home applications.
 
+
+# 🧰 Components Required:-
+Arduino Uno
+2x LEDs (as device indicators)
+2x 220Ω Resistors
+Breadboard
+Jumper wires
+(Optional, if offline) HC-05 Bluetooth module
+
+
 # LINK OF PROJECT
 https://www.tinkercad.com/things/998tM8NYSyI-home-automation-system?sharecode=aFn17AVyB7ScX9xMySdKy7uCmR-ijfReWOaMkLbH2Mo
