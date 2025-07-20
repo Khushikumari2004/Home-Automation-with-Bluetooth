@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project Dashboard</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4a90e2;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .card-content {
+            flex: 1 1 300px;
+            min-width: 280px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            color: #333;
+        }
+
+        .card p,
+        .card ul {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        .card ul {
+            padding-left: 18px;
+            margin-top: 5px;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #4a90e2;
+            font-weight: bold;
+        }
+
+        .card img {
+            flex: 1 1 300px;
+            max-width: 400px;
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>🌟 My Projects Dashboard</header>
+
+    <div class="container">
+        <!-- Push Button Counter Project -->
+        <div class="card">
+            <div class="card-content">
+                <h3>Home Automation System</h3>
+                <p>📋 Project Description: Bluetooth Controlled Home Automation System This project demonstrates a Bluetooth-controlled home automation system using an Arduino Uno and an HC-05 Bluetooth module. It allows users to wirelessly control home appliances—such as lights or fans—by sending commands from a smartphone or Bluetooth terminal app. Appliances are simulated using bulbs connected to the Arduino.When specific commands (e.g., “1” to turn on a light, “0” to turn it off) are received via Bluetooth, the Arduino processes them and switches the devices accordingly. This project showcases the use of wireless communication, serial data handling, and digital output control, making it ideal for smart home applications..</p>
+                <p><strong>🧰 Components Used:</strong></p>
+                <ul>
+                    <li>Arduino Uno</li>
+                    <li>2x leds (to represent appliances like LIGHT and FAN)</li>
+                     <li>Breadboard</li>
+                    <li>(Optional, if offline) HC-05 Bluetooth module</li>
+                    <li>Jumper wires (Optional)</li>
+                    <!-- <li>10kΩ Resistor (pull-down)</li> -->
+                </ul>
+
+                <button><a
+                        href="https://www.tinkercad.com/things/998tM8NYSyI-home-automation-system?sharecode=aFn17AVyB7ScX9xMySdKy7uCmR-ijfReWOaMkLbH2Mo"
+                        target="_blank" style="font-size: medium; margin-bottom: 2px;">View Project →</a></button>
+            </div>
+
+            <!-- Wiring Image -->
+            <img src="Home.png" alt="Home Automation System Circuit Diagram">
+        </div>
+    </div>
+
+    <div class="footer">© 2025 Khushi Kumari. All rights reserved.</div>
+
+</body>
+
+</html>
